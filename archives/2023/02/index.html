@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="zh-CN">
   
 
     <head>
@@ -13,7 +13,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Archives: 2023/2 |  Banker</title>
+      <title>归档: 2023/2 |  Banker</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -109,27 +109,6 @@
   </div>
 </article>
       
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/28/hello-world/" class="archive-article-date">
-  <time datetime="2023-02-28T11:40:51.731Z" itemprop="datePublished">02/28</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/02/28/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
-    </header>
-    
-    
-  </div>
-</article>
-      
       
     </div>
   </div>
@@ -144,7 +123,7 @@
       <li>
         Copyrights &copy;
         2015-2023
-        <i class="ri-heart-fill heart_icon"></i> John Doe
+        <i class="ri-heart-fill heart_icon"></i> bomb000
       </li>
     </ul>
     <ul>
@@ -157,9 +136,9 @@
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -239,7 +218,7 @@
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -491,7 +470,7 @@
   console.log(password, lock_password);
   if (lock_password !== password) {
     Swal.fire({
-      title: "Please enter password",
+      title: "请输入访问密码",
       input: "text",
       inputAttributes: {
         autocapitalize: "off",
@@ -499,7 +478,7 @@
       showCancelButton: false,
       showLoaderOnConfirm: true,
       allowOutsideClick: false,
-      confirmButtonText: "Ok",
+      confirmButtonText: "确定",
     }).then((result) => {
       console.log(result);
       if (result.isConfirmed) {
@@ -509,8 +488,8 @@
         } else {
           Swal.fire({
             icon: "error",
-            title: "Incorrect password, please try again",
-            confirmButtonText: "Ok",
+            title: "密码错误，请重试",
+            confirmButtonText: "确定",
             allowOutsideClick: false,
           }).then(() => {
             window.location.reload();
